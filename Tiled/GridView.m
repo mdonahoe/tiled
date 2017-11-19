@@ -55,11 +55,12 @@
             return nil;
         }
         width = WIDTH;
+        height = 3 * width / 2;
         lite[0] = 0.3;
         lite[1] = 0.0;
         lite[2] = 0.3;
         litemode = 1;
-        for (int i=0;i<3*width*width/2;i++){
+        for (int i=0;i<width * height;i++){
             angle[i] = arc4random()%2 * 360*3;
         }
         glBlendFunc(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);//, GL_ONE);
@@ -383,7 +384,6 @@
     glLoadIdentity();
     
     glScalef(2,2,.5);
-    int height = 480*width/320;
     int small = (width<height)?width:height;
     
     glTranslatef(0, 0, -2.1*small-1);
@@ -501,7 +501,9 @@
 
 - (void) setSpeed:(float)s atPoint:(CGPoint)pos{
     int bw = backingWidth / width;
-    int index = width * ((int)(backingHeight - MAX(MIN(475,pos.y),20))/bw) + (int)MAX(MIN(310,pos.x),3)/bw;
+    int y = (backingHeight - pos.y) / bw;
+    int x = pos.x / bw;
+    int index = (width * MAX(0, MIN(height - 1, y))) + MAX(0, MIN(width - 1, x));
     index = MIN(MAX(0,index),NN-1);
     vel[index] = 10*s;
 }

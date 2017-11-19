@@ -29,6 +29,7 @@
     float lite[3];
     int litemode;
     int width;
+    int height;
     EAGLContext *context;
     GLuint viewRenderbuffer, viewFramebuffer;
     GLuint depthRenderbuffer;
