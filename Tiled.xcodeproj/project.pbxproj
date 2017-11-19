@@ -13,7 +13,6 @@
 		C90218F01FC16B500089CCBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90218EF1FC16B500089CCBE /* Assets.xcassets */; };
 		C90218F31FC16B500089CCBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90218F11FC16B500089CCBE /* LaunchScreen.storyboard */; };
 		C90218FD1FC16C6E0089CCBE /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = C90218FC1FC16C6E0089CCBE /* GridView.m */; };
-		C981658A1FC16E310048227A /* Texture2D.m in Sources */ = {isa = PBXBuildFile; fileRef = C98165891FC16E300048227A /* Texture2D.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +26,6 @@
 		C90218FA1FC16C6D0089CCBE /* Tiled-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tiled-Bridging-Header.h"; sourceTree = "<group>"; };
 		C90218FB1FC16C6E0089CCBE /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridView.h; sourceTree = "<group>"; };
 		C90218FC1FC16C6E0089CCBE /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridView.m; sourceTree = "<group>"; };
-		C98165881FC16E300048227A /* Texture2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture2D.h; sourceTree = "<group>"; };
-		C98165891FC16E300048227A /* Texture2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Texture2D.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +58,6 @@
 		C90218E71FC16B500089CCBE /* Tiled */ = {
 			isa = PBXGroup;
 			children = (
-				C98165881FC16E300048227A /* Texture2D.h */,
-				C98165891FC16E300048227A /* Texture2D.m */,
 				C90218FB1FC16C6E0089CCBE /* GridView.h */,
 				C90218FC1FC16C6E0089CCBE /* GridView.m */,
 				C90218E81FC16B500089CCBE /* AppDelegate.swift */,
@@ -150,7 +145,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C90218FD1FC16C6E0089CCBE /* GridView.m in Sources */,
-				C981658A1FC16E310048227A /* Texture2D.m in Sources */,
 				C90218EB1FC16B500089CCBE /* ViewController.swift in Sources */,
 				C90218E91FC16B500089CCBE /* AppDelegate.swift in Sources */,
 			);
@@ -294,7 +288,7 @@
 				DEVELOPMENT_TEAM = T9HAK7CXKV;
 				INFOPLIST_FILE = Tiled/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.serioussandbox.Tiled;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdonahoe.tiled;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tiled/Tiled-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -312,7 +306,7 @@
 				DEVELOPMENT_TEAM = T9HAK7CXKV;
 				INFOPLIST_FILE = Tiled/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.serioussandbox.Tiled;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdonahoe.tiled;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tiled/Tiled-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;

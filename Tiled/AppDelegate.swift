@@ -3,7 +3,7 @@
 //  Tiled
 //
 //  Created by Matt Donahoe on 11/18/17.
-//  Copyright © 2017 Serious Sandbox. All rights reserved.
+//  Copyright © 2017 Matt Donahoe. All rights reserved.
 //
 
 import UIKit

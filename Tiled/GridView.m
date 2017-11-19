@@ -39,8 +39,6 @@
     return [CAEAGLLayer class];
 }
 
-
-//The GL view is stored in the nib file. When it's unarchived it's sent -initWithCoder:
 - (id)initWithCoder:(NSCoder*)coder {
     
     if ((self = [super initWithCoder:coder])) {
@@ -385,10 +383,7 @@
     glLoadIdentity();
     
     glScalef(2,2,.5);
-    //int width = (int)angle/180 + 1;
     int height = 480*width/320;
-    //height = width = 8;
-    
     int small = (width<height)?width:height;
     
     glTranslatef(0, 0, -2.1*small-1);
@@ -405,7 +400,6 @@
         float y = i/width - (float)(height-1)/2;
         
         glTranslatef(x,y,0);
-        //float gamma = 1.0 / (1.0 + 1.0 / angle[i] / angle[i] );
         float alpha = .5*(cos(angle[i]/360.0*3.14159)+1.0);
         float beta = 1-alpha;
         lite[0] = (0.5*(A*alpha + B*beta)+C*lite[0]);
@@ -509,7 +503,6 @@
     int bw = backingWidth / width;
     int index = width * ((int)(backingHeight - MAX(MIN(475,pos.y),20))/bw) + (int)MAX(MIN(310,pos.x),3)/bw;
     index = MIN(MAX(0,index),NN-1);
-    //angle[index] = 90;
     vel[index] = 10*s;
 }
 
@@ -529,9 +522,7 @@
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{ 
     for (UITouch *touch in touches) {
-        
-        
-        // Send to the dispatch method, which will make sure the appropriate subview is acted upon
+
         float dy = [touch locationInView:self].y - [touch previousLocationInView:self].y;
         float dx = [touch locationInView:self].x - [touch previousLocationInView:self].x;
         
