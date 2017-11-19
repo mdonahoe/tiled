@@ -1,6 +1,6 @@
 //
-//  EAGLView.m
-//  gridtest
+//  GridView.m
+//  Tiled
 //
 //  Created by Matt Donahoe on 11/20/08.
 //  Copyright Serious Sandbox LLC 2008. All rights reserved.
