@@ -20,16 +20,16 @@
 @class Texture2D;
 
 @interface GridView : UIView {
-
+    
 @private
     GLint backingWidth;
     GLint backingHeight;
     float angle[NN];
-	float vel[NN];
-	float acc[NN];
-	float lite[3];
-	int litemode;
-	int width;
+    float vel[NN];
+    float acc[NN];
+    float lite[3];
+    int litemode;
+    int width;
     EAGLContext *context;
     GLuint viewRenderbuffer, viewFramebuffer;
     GLuint depthRenderbuffer;
